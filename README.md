@@ -1,9 +1,7 @@
-# Pavan-Portfolio
-IT Career Portfolio of Pavan G V: Windows, Active Directory, Microsoft 365, networking and PowerShell automation, building toward System Administrator and Cloud Engineer.
-
 # Pavan G V | IT Career Portfolio
 
 Portfolio website showcasing my IT Technical Support experience, home labs,
+IT Career Portfolio of Pavan G V: Windows, Active Directory, Microsoft 365, networking and PowerShell automation, building toward System Administrator and Cloud Engineer.
 PowerShell automation and troubleshooting case studies.
 
 Live site: https://pavan-747-tech.github.io
