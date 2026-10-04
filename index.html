@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pavan G V | IT Support Engineer | Windows, Active Directory, Microsoft 365 | Portfolio</title>
+<meta name="description" content="IT Technical Support professional with 2+ years of enterprise experience in Windows, networking, Microsoft 365 and troubleshooting, growing into System Administration and Cloud Engineering.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f4f6f9;--panel:#fff;--ink:#14202e;--mute:#5a6b7d;--line:#d9e0e8;--acc:#0b63c5;--acc2:#0f766e;--ok:#0f7a3d;--wip:#9a5b00;--plan:#5b4bb5;--code:#101a27;--codeink:#d5e3f3;--sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Consolas,monospace}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1520;--panel:#142030;--ink:#e5edf6;--mute:#93a4b8;--line:#243449;--acc:#5aa9ff;--acc2:#3fc9b8;--ok:#4cd58a;--wip:#f0b34a;--plan:#a99bff;--code:#09111a}}
+:root[data-theme="dark"]{--bg:#0d1520;--panel:#142030;--ink:#e5edf6;--mute:#93a4b8;--line:#243449;--acc:#5aa9ff;--acc2:#3fc9b8;--ok:#4cd58a;--wip:#f0b34a;--plan:#a99bff;--code:#09111a}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans)}
+a{color:var(--acc)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--panel);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:12px;height:56px}
+.nav strong{font-family:var(--mono);font-size:14px;white-space:nowrap}
+.nav nav{display:flex;gap:4px;overflow-x:auto;flex:1;scrollbar-width:none}
+.nav nav a{padding:6px 10px;border-radius:6px;text-decoration:none;color:var(--mute);font-size:14px;white-space:nowrap}
+.nav nav a:hover{color:var(--ink);background:var(--bg)}
+button.t{background:none;border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:6px 10px;cursor:pointer;font:inherit;font-size:13px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em}
+h2{font-size:28px;margin:0 0 8px;letter-spacing:-.01em}
+h3{font-size:18px;margin:0 0 6px}
+.lead{color:var(--mute);max-width:64ch;margin:0 0 28px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px}
+.card p{margin:6px 0}
+.tag{display:inline-block;font:500 12px var(--mono);padding:2px 8px;border-radius:4px;border:1px solid var(--line);color:var(--mute);margin:2px 4px 2px 0}
+.st{font:500 12px var(--mono);padding:2px 8px;border-radius:4px;border:1px solid currentColor;float:right}
+.st.ok{color:var(--ok)}.st.wip{color:var(--wip)}.st.plan{color:var(--plan)}
+.hero{padding:64px 0 48px}
+.hero .grid{grid-template-columns:1.2fr 1fr;align-items:center;gap:32px}
+@media(max-width:800px){.hero .grid{grid-template-columns:1fr}}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btn{display:inline-block;padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:600;border:1px solid var(--acc);color:var(--acc)}
+.btn.p{background:var(--acc);color:var(--bg)}
+.dash{background:var(--code);color:var(--codeink);border-radius:8px;padding:20px;font:14px/1.7 var(--mono)}
+.dash .k{color:#7f93aa}.dash .g{color:#4cd58a}.dash .y{color:#f0b34a}.dash .b{color:#8cc4ff}
+.dash hr{border:0;border-top:1px solid #243449;margin:10px 0}
+.bar{height:6px;background:#243449;border-radius:3px;overflow:hidden;margin:2px 0 8px}
+.bar i{display:block;height:100%;background:#4cd58a;width:0;animation:fill 1.2s ease-out forwards}
+@keyframes fill{to{width:var(--w)}}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:28px}
+.stats div{border-left:3px solid var(--acc);padding-left:12px}
+.stats b{display:block;font-size:22px}
+.stats span{color:var(--mute);font-size:14px}
+ul{padding-left:20px;margin:6px 0}
+li{margin:3px 0}
+.tl{list-style:none;padding:0;margin:0;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 22px 24px}
+.tl li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--line)}
+.tl li.now::before{background:var(--acc);border-color:var(--acc)}
+.tl .when{font:500 13px var(--mono);color:var(--mute)}
+pre{background:var(--code);color:var(--codeink);padding:14px;border-radius:6px;overflow-x:auto;font:13px/1.5 var(--mono);margin:8px 0 0}
+.cs dt{font:500 12px var(--mono);color:var(--acc2);margin-top:10px}
+.cs dd{margin:0}
+.ph{border-style:dashed}
+.note{font-size:14px;color:var(--mute)}
+.shot{border:1px dashed var(--line);border-radius:6px;padding:18px;text-align:center;color:var(--mute);font-size:14px}
+.arch{white-space:pre;overflow-x:auto;background:var(--code);color:var(--codeink);padding:14px;border-radius:6px;font:13px/1.5 var(--mono)}
+details{margin-top:10px}
+summary{cursor:pointer;font-weight:600;color:var(--acc)}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+@media(prefers-reduced-motion:reduce){.bar i{animation:none;width:var(--w)}html{scroll-behavior:auto}}
+@media print{header.nav,.btns{display:none}}
+
+.hero{position:relative;overflow:hidden}.hero .wrap{position:relative}
+.bgart{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none;color:var(--acc)}
+.bgart .ln{stroke:currentColor;stroke-width:1;opacity:.25;stroke-dasharray:4 8;animation:flow 20s linear infinite}
+.bgart .nd{fill:currentColor;animation:pulse 4s ease-in-out infinite}
+.bgart .nd:nth-of-type(2n){animation-delay:1.3s}.bgart .nd:nth-of-type(3n){animation-delay:2.6s}
+@keyframes flow{to{stroke-dashoffset:-240}}
+@keyframes pulse{50%{opacity:.25;r:6}}
+.diagram{width:100%;height:auto;display:block;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+.diagram text{font-family:var(--mono);font-size:12px;fill:var(--ink)}
+.diagram .sub{fill:var(--mute);font-size:11px}
+.diagram .box{fill:var(--bg);stroke:var(--line);stroke-width:1.5}
+.diagram .host{fill:none;stroke:var(--line);stroke-width:1.5;stroke-dasharray:6 5}
+.diagram .wire{stroke:var(--acc);stroke-width:2;stroke-dasharray:6 8;fill:none;animation:flow 4s linear infinite}
+.diagram .wire.b{stroke:var(--acc2);animation-duration:5s;animation-direction:reverse}
+.diagram .live{fill:var(--ok);animation:pulse 2.5s ease-in-out infinite}
+.diagram .future{fill:none;stroke:var(--plan);stroke-width:1.5;stroke-dasharray:5 5}
+.method{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:0 0 20px}
+.method div{border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:10px 12px;font-size:14px;animation:step 12s infinite}
+.method b{display:block;font:500 12px var(--mono);color:var(--mute)}
+.method div:nth-child(2){animation-delay:2.4s}.method div:nth-child(3){animation-delay:4.8s}.method div:nth-child(4){animation-delay:7.2s}.method div:nth-child(5){animation-delay:9.6s}
+@keyframes step{0%,16%{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc)}20%,100%{border-color:var(--line);box-shadow:none}}
+.js .rv{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.bgart .ln,.bgart .nd,.diagram .wire,.diagram .live,.method div{animation:none}.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<strong>Pavan G V</strong>
+<nav aria-label="Sections"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#homelab">Home Lab</a><a href="#cases">Case Studies</a><a href="#powershell">PowerShell</a><a href="#certs">Certifications</a><a href="#roadmap">Roadmap</a><a href="#resume">Resume</a><a href="#contact">Contact</a></nav>
+<button class="t" id="theme" type="button" aria-label="Toggle light or dark theme">Theme</button>
+</div></header>
+
+<main>
+<section class="hero" id="top"><svg class="bgart" viewBox="0 0 1080 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path class="ln" d="M40 60 L260 150 L480 70 L700 180 L920 90 L1040 200"/><path class="ln" d="M120 360 L330 260 L560 340 L780 250 L1000 330"/><path class="ln" d="M260 150 L330 260 M480 70 L560 340 M700 180 L780 250"/><circle class="nd" cx="40" cy="60" r="4"/><circle class="nd" cx="260" cy="150" r="4"/><circle class="nd" cx="480" cy="70" r="4"/><circle class="nd" cx="700" cy="180" r="4"/><circle class="nd" cx="920" cy="90" r="4"/><circle class="nd" cx="330" cy="260" r="4"/><circle class="nd" cx="560" cy="340" r="4"/><circle class="nd" cx="780" cy="250" r="4"/><circle class="nd" cx="1000" cy="330" r="4"/></svg><div class="wrap grid">
+<div>
+<p class="note" style="margin:0 0 8px">IT Support Engineer · Windows · Networking · Microsoft 365</p>
+<h1>Enterprise IT support, built toward system administration and cloud.</h1>
+<p class="lead">I'm Pavan G V, a Technical Associate with 2+ years of hands-on IT technical support. I resolve Windows, network and Microsoft 365 issues, and I build home labs in Windows Server, Active Directory, PowerShell and Azure to move into System Administrator and Cloud Engineer roles.</p>
+<div class="btns"><a class="btn p" href="#projects">View projects</a><a class="btn" href="#resume">Resume</a><a class="btn" href="#contact">Contact me</a></div>
+</div>
+<div class="dash" role="img" aria-label="Career path status panel">
+<div><span class="k">profile</span> <span class="b">IT Technical Support</span></div>
+<div><span class="k">experience</span> 2+ years</div>
+<hr>
+<div>IT Technical Support <span class="g">● current</span></div><div class="bar"><i style="--w:100%"></i></div>
+<div>System Administrator <span class="y">● next target</span></div><div class="bar"><i style="--w:45%;background:#f0b34a"></i></div>
+<div>Cloud Engineer <span class="y">● long-term goal</span></div><div class="bar"><i style="--w:15%;background:#a99bff"></i></div>
+<div class="k">bars show direction of focus, not job levels</div>
+</div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2>About me</h2>
+<p class="lead">IT professional focused on keeping users productive and enterprise systems stable.</p>
+<div class="grid">
+<div class="card"><h3>What I do today</h3><p>I work in IT Technical Support as a Technical Associate, with a focus on Windows 10/11, networking, Microsoft 365, troubleshooting and enterprise IT support, including remote support and user account management.</p></div>
+<div class="card"><h3>How I work</h3><p>I follow a structured method: identify the problem, check the basics, isolate the layer (hardware, OS, network, service), fix, verify and document. I write down what I find so the next incident is faster.</p></div>
+<div class="card"><h3>Where I'm heading</h3><p>My goal is System Administrator, then Cloud Engineer. I'm building skills through labs in Windows Server, Active Directory, Group Policy, PowerShell and Azure, and I label each lab honestly as completed, in progress or planned.</p></div>
+</div>
+<div class="stats"><div><b>2+ yrs</b><span>IT technical support</span></div><div><b>Windows · M365</b><span>core support stack</span></div><div><b>3 labs</b><span>home lab projects (see status)</span></div><div><b>Azure</b><span>learning, in progress</span></div></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Technical skills</h2>
+<p class="lead">Grouped by area. Items marked Learning are not yet used in production work.</p>
+<div class="grid">
+<div class="card"><h3>Operating systems</h3><span class="tag">Windows 10/11</span><span class="tag">Windows Server</span><span class="tag">Linux</span></div>
+<div class="card"><h3>Identity &amp; directory</h3><span class="tag">Active Directory</span><span class="tag">Group Policy (GPO)</span><span class="tag">User Account Management</span></div>
+<div class="card"><h3>Networking</h3><span class="tag">TCP/IP</span><span class="tag">DNS</span><span class="tag">DHCP</span><span class="tag">Network Troubleshooting</span><span class="tag">Zscaler</span></div>
+<div class="card"><h3>Cloud &amp; collaboration</h3><span class="tag">Microsoft 365</span><span class="tag">Azure (Learning)</span></div>
+<div class="card"><h3>Virtualization</h3><span class="tag">VMware</span></div>
+<div class="card"><h3>Automation</h3><span class="tag">PowerShell</span></div>
+<div class="card"><h3>Support practice</h3><span class="tag">Hardware &amp; Software Troubleshooting</span><span class="tag">Remote IT Support</span></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Professional experience</h2>
+<p class="lead">Edit the bullets below to match your real duties. Do not add confidential company details.</p>
+<ul class="tl">
+<li class="now"><span class="when">[Start date] – Present</span><h3>Technical Associate / IT Technical Support · Intime Solution Pvt Ltd</h3>
+<ul><li>Provide enterprise IT technical support for Windows 10/11 users, onsite and remote.</li><li>Troubleshoot network connectivity, hardware, software and Microsoft 365 issues.</li><li>Manage user accounts and resolve access and login problems.</li><li>[Add one measurable result you can verify, e.g. tickets handled per week.]</li></ul></li>
+</ul>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>IT projects</h2>
+<p class="lead">Each project shows its real status. Link each to a GitHub repository when ready.</p>
+<div class="grid">
+<article class="card"><span class="st ok">Completed</span><h3>1. Windows Server &amp; AD Home Lab</h3><p>Domain environment built on VMware.</p><span class="tag">Server 2022</span><span class="tag">AD DS</span><span class="tag">DNS</span><span class="tag">DHCP</span><span class="tag">GPO</span><p><a href="#homelab">Details below</a> · <a href="#">GitHub</a></p></article>
+<article class="card"><span class="st ok">Completed</span><h3>2. PowerShell IT Support Automation</h3><p>PowerShell and Batch toolkit for system health checks, network diagnostics, system repair and temp file cleanup, plus a static/DHCP IP switcher.</p><span class="tag">PowerShell</span><span class="tag">Batch</span><p><a href="#powershell">Scripts below</a> · <a href="https://github.com/Pavan-747-tech/IT-Support-Automation-Toolkit">GitHub repo</a></p></article>
+<article class="card"><span class="st wip">In Progress</span><h3>3. Network Troubleshooting Lab</h3><p>IP addressing, subnetting, DNS, DHCP, VLAN, routing, TCP/IP and a repeatable troubleshooting method.</p><span class="tag">TCP/IP</span><span class="tag">VLAN</span><span class="tag">Routing</span><p><a href="#">GitHub</a></p></article>
+<article class="card"><span class="st plan">Planned</span><h3>4. Azure Cloud Lab</h3><p>Azure VM, virtual network, NSG, Microsoft Entra ID, RBAC, Storage and Azure Monitor. Not started; no cloud experience is claimed.</p><span class="tag">Azure</span><span class="tag">Entra ID</span><span class="tag">RBAC</span></article>
+</div>
+<details><summary>Project 3 scope: Network Troubleshooting Lab</summary>
+<div class="card" style="margin-top:10px"><ul><li>IP addressing and subnetting practice (CIDR, subnet masks, host ranges)</li><li>DNS and DHCP: record types, lease behavior, scope options</li><li>VLAN segmentation and inter-VLAN routing concepts</li><li>Routing basics and default gateway checks</li><li>Method: define the problem, test layer by layer, change one thing at a time, verify, document</li></ul></div></details>
+<details><summary>Project 4 plan: Azure Cloud Lab</summary>
+<div class="card" style="margin-top:10px"><ul><li>Deploy an Azure VM inside a virtual network</li><li>Restrict traffic with a Network Security Group</li><li>Manage identities and roles with Microsoft Entra ID and RBAC</li><li>Use Azure Storage and monitor resources with Azure Monitor</li></ul></div></details>
+</div></section>
+
+<section id="homelab"><div class="wrap">
+<h2>Home lab: Windows Server &amp; Active Directory</h2>
+<p class="lead"><span class="st ok" style="float:none">Completed</span> A small domain environment for practicing the work of a system administrator.</p>
+<div class="grid">
+<div class="card"><h3>Objective</h3><p>Build and manage a Windows domain with centralized identity, name resolution, IP assignment and policy.</p><h3 style="margin-top:14px">Technologies</h3><span class="tag">VMware Workstation</span><span class="tag">Windows Server 2022</span><span class="tag">AD DS</span><span class="tag">DNS</span><span class="tag">DHCP</span><span class="tag">Windows 11</span><span class="tag">Group Policy</span></div>
+<div><h3>Architecture</h3><svg class="diagram" viewBox="0 0 640 270" role="img" aria-label="Home lab network diagram: SRV01 domain controller, virtual switch and CLIENT01 Windows 11 inside a VMware Workstation host"><rect class="host" x="10" y="10" width="620" height="250" rx="10"/><text x="24" y="32">VMware Workstation host</text><text class="sub" x="24" y="48">isolated virtual network</text>
+<rect class="box" x="30" y="95" width="170" height="100" rx="8"/><circle class="live" cx="46" cy="112" r="4"/><text x="58" y="116">SRV01</text><text class="sub" x="44" y="140">Windows Server 2022</text><text class="sub" x="44" y="158">AD DS · DNS · DHCP</text><text class="sub" x="44" y="176">static IP</text>
+<rect class="box" x="255" y="115" width="130" height="60" rx="8"/><text x="278" y="142">Virtual</text><text x="278" y="158">switch</text>
+<rect class="box" x="440" y="95" width="170" height="100" rx="8"/><circle class="live" cx="456" cy="112" r="4"/><text x="468" y="116">CLIENT01</text><text class="sub" x="454" y="140">Windows 11</text><text class="sub" x="454" y="158">domain-joined</text><text class="sub" x="454" y="176">GPO applied</text>
+<path class="wire" d="M200 145 H255"/><path class="wire b" d="M385 145 H440"/>
+<text class="sub" x="203" y="228">DNS · Kerberos</text><text class="sub" x="203" y="244">DHCP lease · Group Policy</text></svg></div>
+</div>
+<div class="grid" style="margin-top:16px">
+<div class="card"><h3>Configuration steps</h3><ul><li>Create VMs and an isolated virtual network</li><li>Set a static IP on the server</li><li>Install AD DS and promote to domain controller</li><li>Configure DNS zones and the DHCP scope</li><li>Join the Windows 11 client to the domain</li><li>Create OUs, users and groups</li><li>Apply Group Policy objects</li></ul></div>
+<div class="card"><h3>Skills demonstrated</h3><ul><li>Domain and identity administration</li><li>DNS and DHCP configuration</li><li>Group Policy design</li><li>Virtualization with VMware</li></ul></div>
+<div class="card"><h3>Troubleshooting performed</h3><p class="note">Replace with issues you actually hit, for example:</p><ul><li>Client not finding the domain (DNS pointing to wrong server)</li><li>Client not receiving a DHCP lease</li><li>GPO not applying (checked with gpresult / gpupdate)</li></ul></div>
+<div class="card"><h3>What I learned</h3><p>Active Directory depends on correct DNS. Most domain problems begin with name resolution, so I check DNS first.</p></div>
+</div>
+<div class="grid" style="margin-top:16px"><div class="shot">Screenshot placeholder: Active Directory Users and Computers</div><div class="shot">Screenshot placeholder: DHCP scope</div><div class="shot">Screenshot placeholder: Group Policy Management</div></div>
+</div></section>
+
+<section id="cases"><div class="wrap">
+<h2>Troubleshooting case studies</h2>
+<p class="lead">The first case is a worked example. Dashed cards are templates for you to fill with real, non-confidential cases.</p>
+<div class="method" aria-label="Troubleshooting method"><div><b>STEP 1</b>Identify the problem</div><div><b>STEP 2</b>Isolate the layer</div><div><b>STEP 3</b>Test one change</div><div><b>STEP 4</b>Fix and verify</div><div><b>STEP 5</b>Document</div></div>
+<div class="grid">
+<article class="card cs"><h3>LAN connected, no internet</h3><dl><dt>PROBLEM</dt><dd>Wired connection shows connected but no websites load.</dd><dt>INVESTIGATION</dt><dd>Checked IP address, default gateway, DNS and duplicate IP.</dd><dt>TOOLS</dt><dd><span class="tag">ipconfig</span><span class="tag">ping</span><span class="tag">nslookup</span><span class="tag">PowerShell</span></dd><dt>ROOT CAUSE</dt><dd>IP configuration / duplicate IP issue.</dd><dt>RESOLUTION</dt><dd>Corrected the network configuration and renewed the DHCP lease.</dd></dl></article>
+<article class="card cs ph"><h3>DNS troubleshooting</h3><dl><dt>PROBLEM</dt><dd>[Describe]</dd><dt>INVESTIGATION</dt><dd>[Steps]</dd><dt>TOOLS</dt><dd><span class="tag">nslookup</span><span class="tag">ipconfig /flushdns</span></dd><dt>ROOT CAUSE / RESOLUTION</dt><dd>[Add]</dd></dl></article>
+<article class="card cs ph"><h3>DHCP troubleshooting</h3><dl><dt>PROBLEM</dt><dd>[Describe]</dd><dt>INVESTIGATION</dt><dd>[Steps]</dd><dt>TOOLS</dt><dd><span class="tag">ipconfig /renew</span><span class="tag">DHCP console</span></dd><dt>ROOT CAUSE / RESOLUTION</dt><dd>[Add]</dd></dl></article>
+<article class="card cs ph"><h3>Active Directory login problems</h3><dl><dt>PROBLEM</dt><dd>[Describe]</dd><dt>INVESTIGATION</dt><dd>[Steps]</dd><dt>TOOLS</dt><dd><span class="tag">ADUC</span><span class="tag">PowerShell</span></dd><dt>ROOT CAUSE / RESOLUTION</dt><dd>[Add]</dd></dl></article>
+<article class="card cs ph"><h3>Windows issues</h3><dl><dt>PROBLEM</dt><dd>[Describe]</dd><dt>INVESTIGATION</dt><dd>[Steps]</dd><dt>TOOLS</dt><dd><span class="tag">Event Viewer</span><span class="tag">sfc</span><span class="tag">DISM</span></dd><dt>ROOT CAUSE / RESOLUTION</dt><dd>[Add]</dd></dl></article>
+<article class="card cs ph"><h3>Network connectivity</h3><dl><dt>PROBLEM</dt><dd>[Describe]</dd><dt>INVESTIGATION</dt><dd>[Steps]</dd><dt>TOOLS</dt><dd><span class="tag">ping</span><span class="tag">tracert</span></dd><dt>ROOT CAUSE / RESOLUTION</dt><dd>[Add]</dd></dl></article>
+<article class="card cs ph"><h3>Software installation</h3><dl><dt>PROBLEM</dt><dd>[Describe]</dd><dt>INVESTIGATION</dt><dd>[Steps]</dd><dt>TOOLS</dt><dd><span class="tag">Logs</span><span class="tag">Admin rights check</span></dd><dt>ROOT CAUSE / RESOLUTION</dt><dd>[Add]</dd></dl></article>
+<article class="card cs ph"><h3>Microsoft 365 issues</h3><dl><dt>PROBLEM</dt><dd>[Describe]</dd><dt>INVESTIGATION</dt><dd>[Steps]</dd><dt>TOOLS</dt><dd><span class="tag">M365 admin center</span><span class="tag">Outlook</span></dd><dt>ROOT CAUSE / RESOLUTION</dt><dd>[Add]</dd></dl></article>
+</div>
+</div></section>
+
+<section id="powershell"><div class="wrap">
+<h2>PowerShell automation</h2>
+<p class="lead"><span class="st ok" style="float:none">Completed</span> The first two cards are my own scripts. The smaller cards are reference snippets. Test in a lab before using on real systems.</p>
+<div class="grid">
+<div class="card" style="grid-column:1/-1"><h3>Static IP / DHCP switcher (menu-driven script)</h3><p class="note">Self-elevates to administrator, then lets the user set a static IP, subnet mask and gateway, or switch the Ethernet adapter back to DHCP with release and renew. Used to change network settings quickly during support work.</p><pre>$isAdmin = ([Security.Principal.WindowsPrincipal] `
+    [Security.Principal.WindowsIdentity]::GetCurrent()
+).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+
+if (-not $isAdmin) {
+    Start-Process powershell.exe -Verb RunAs `
+        -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`""
+    exit
+}
+
+$InterfaceName = "Ethernet"
+Clear-Host
+Write-Host "Ethernet IP Configuration" -ForegroundColor Cyan
+Write-Host "1. Set Static IP"
+Write-Host "2. Set Automatic DHCP"
+$Choice = Read-Host "Select option"
+
+if ($Choice -eq "1") {
+    $IP      = Read-Host "Enter IP Address"
+    $Mask    = Read-Host "Enter Subnet Mask"
+    $Gateway = Read-Host "Enter Default Gateway"
+
+    netsh interface ip set address name="$InterfaceName" static $IP $Mask $Gateway
+    Write-Host "Static IP set successfully. IP: $IP" -ForegroundColor Green
+}
+elseif ($Choice -eq "2") {
+    # Enable DHCP for address and DNS
+    netsh interface ip set address name="$InterfaceName" source=dhcp
+    netsh interface ip set dns name="$InterfaceName" source=dhcp
+
+    # Release old IP, request a new one
+    ipconfig /release "$InterfaceName"
+    Start-Sleep -Seconds 2
+    ipconfig /renew "$InterfaceName"
+    Write-Host "Ethernet is now using Automatic DHCP." -ForegroundColor Green
+}
+else {
+    Write-Host "Invalid option." -ForegroundColor Red
+}
+
+Write-Host "Current Ethernet Configuration:" -ForegroundColor Cyan
+ipconfig
+Read-Host "Press Enter to exit"</pre></div>
+<div class="card" style="grid-column:1/-1"><h3>IT Support Automation Toolkit (GitHub)</h3><p>A collection of Windows automation scripts that help IT support diagnose, troubleshoot and fix common system and network issues.</p><span class="tag">System_Health.ps1</span><span class="tag">cleanup_temp.ps1</span><span class="tag">network_diagnostics.bat</span><span class="tag">system_repair.bat</span><p><a href="https://github.com/Pavan-747-tech/IT-Support-Automation-Toolkit">View repository and screenshots</a></p></div><div class="card"><h3>Network troubleshooting</h3><pre>Test-NetConnection 8.8.8.8
+Test-NetConnection example.com -Port 443
+Resolve-DnsName example.com
+Get-NetIPConfiguration</pre></div>
+<div class="card"><h3>System information</h3><pre>Get-ComputerInfo |
+  Select CsName, OsName, OsVersion, CsTotalPhysicalMemory
+Get-PSDrive -PSProvider FileSystem</pre></div>
+<div class="card"><h3>DHCP scope (Windows Server)</h3><pre>Add-DhcpServerv4Scope -Name "Lab" `
+  -StartRange 192.168.10.100 `
+  -EndRange 192.168.10.200 `
+  -SubnetMask 255.255.255.0</pre></div>
+<div class="card"><h3>User management (AD)</h3><pre>New-ADUser -Name "Test User" -SamAccountName tuser `
+  -Enabled $true `
+  -AccountPassword (Read-Host -AsSecureString)
+Unlock-ADAccount -Identity tuser</pre></div>
+</div>
+</div></section>
+
+<section id="certs"><div class="wrap">
+<h2>Certifications &amp; learning</h2>
+<p class="lead">No certifications earned yet. Below is what I am learning and planning.</p>
+<div class="grid">
+<div class="card"><span class="st wip">Learning</span><h3>Currently studying</h3><ul><li>Microsoft Azure fundamentals</li><li>Windows Server administration</li><li>PowerShell scripting</li></ul></div>
+<div class="card"><span class="st plan">Planned</span><h3>Suggested next steps</h3><ul><li>Microsoft Azure Fundamentals (AZ-900)</li><li>Azure Administrator (AZ-104)</li><li>CompTIA Network+ or similar</li></ul><p class="note">Adjust to the exams you choose.</p></div>
+</div>
+</div></section>
+
+<section id="roadmap"><div class="wrap">
+<h2>Career roadmap</h2>
+<ul class="tl">
+<li class="now"><span class="when">Now</span><h3>IT Technical Support</h3><p>Windows, networking, Microsoft 365, enterprise support. Building labs in AD, PowerShell and networking.</p></li>
+<li><span class="when">Next</span><h3>System Administrator</h3><p>Own servers, Active Directory, Group Policy, patching, backups and automation.</p></li>
+<li><span class="when">Later</span><h3>Cloud Engineer</h3><p>Azure infrastructure, identity, networking and monitoring, then infrastructure as code.</p></li>
+</ul>
+<svg class="diagram" style="margin-top:24px" viewBox="0 0 640 130" role="img" aria-label="Career path: IT Support (current), System Administrator (next), Cloud Engineer (planned)"><path class="wire" d="M150 65 H255"/><path class="wire" style="stroke:var(--plan)" d="M385 65 H490"/>
+<rect class="box" x="20" y="35" width="130" height="60" rx="8" style="stroke:var(--ok)"/><circle class="live" cx="36" cy="50" r="4"/><text x="46" y="54">IT Support</text><text class="sub" x="34" y="78">current</text>
+<rect class="box" x="255" y="35" width="130" height="60" rx="8" style="stroke:var(--wip)"/><text x="270" y="60">SysAdmin</text><text class="sub" x="270" y="78">next target</text>
+<rect class="future" x="490" y="35" width="130" height="60" rx="8"/><text x="505" y="60">Cloud Eng.</text><text class="sub" x="505" y="78">planned</text></svg>
+</div></section>
+
+<section id="resume"><div class="wrap">
+<h2>Resume</h2>
+<p class="lead">Summary for recruiters. Add the link to your PDF resume below.</p>
+<div class="card"><h3>IT Support Engineer | Desktop Support | Junior System Administrator</h3>
+<p>IT Technical Support professional with 2+ years supporting Windows 10/11 users, networks and Microsoft 365 in an enterprise environment. Hands-on lab experience with Windows Server 2022, Active Directory, DNS, DHCP, Group Policy and PowerShell. Learning Azure toward a System Administrator and Cloud Engineer path.</p>
+<p><b>Keywords:</b> Windows 10/11, Windows Server, Active Directory, Group Policy, DNS, DHCP, TCP/IP, PowerShell, Microsoft 365, Zscaler, VMware, Linux, Azure (learning), remote support, user account management, troubleshooting.</p>
+<div class="btns"><a class="btn p" href="#">Download resume (PDF)</a></div></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Contact</h2>
+<p class="lead">Open to IT Support, Desktop Support, System Administrator and Cloud Support roles.</p>
+<div class="grid">
+<div class="card"><h3>Email</h3><p><a href="mailto:you@example.com">you@example.com</a></p><p class="note">Replace with your address. Location: [City, Country]</p></div>
+<div class="card"><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p></div>
+<div class="card"><h3>GitHub</h3><p><a href="https://github.com/Pavan-747-tech">github.com/Pavan-747-tech</a></p><p class="note"><a href="https://github.com/Pavan-747-tech/IT-Support-Automation-Toolkit">IT-Support-Automation-Toolkit</a> · <a href="https://github.com/Pavan-747-tech/Automated-Software-Installer">Automated-Software-Installer</a></p></div>
+</div>
+<h2 style="margin-top:40px">LinkedIn profile copy</h2>
+<p class="lead">Paste these into your profile. They reuse the same keywords for recruiter search.</p>
+<div class="grid">
+<div class="card"><h3>Headline</h3><p id="hl">IT Support Engineer | Windows, Active Directory, Microsoft 365, Networking | Building toward System Administrator and Cloud (Azure)</p><button class="t" type="button" data-copy="hl">Copy</button></div>
+<div class="card"><h3>About</h3><p id="ab">IT Technical Support professional with 2+ years of experience in enterprise environments. I support Windows 10/11, networking and Microsoft 365, and I troubleshoot hardware, software and connectivity issues for onsite and remote users. Outside work I build labs with Windows Server 2022, Active Directory, DNS, DHCP, Group Policy and PowerShell, and I am learning Azure. Goal: System Administrator, then Cloud Engineer. Open to IT Support, Desktop Support and Junior System Administrator roles.</p><button class="t" type="button" data-copy="ab">Copy</button></div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr">2026</span> Pavan G V. Portfolio content reflects real experience; planned and in-progress items are labeled.</div></footer>
+
+<script>
+(function(){
+if("IntersectionObserver" in window){document.documentElement.classList.add("js");var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12});document.querySelectorAll(".card,.diagram,.method").forEach(function(el){el.classList.add("rv");io.observe(el)})}
+var root=document.documentElement;
+try{var s=localStorage.getItem("theme");if(s)root.setAttribute("data-theme",s)}catch(e){}
+document.getElementById("theme").addEventListener("click",function(){
+var dark=root.getAttribute("data-theme")==="dark"||(!root.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme: dark)").matches);
+var n=dark?"light":"dark";root.setAttribute("data-theme",n);
+try{localStorage.setItem("theme",n)}catch(e){}});
+document.querySelectorAll("[data-copy]").forEach(function(b){b.addEventListener("click",function(){
+var t=document.getElementById(b.dataset.copy).textContent;
+try{navigator.clipboard.writeText(t).then(function(){b.textContent="Copied"})}catch(e){b.textContent="Select and copy"}
+setTimeout(function(){b.textContent="Copy"},1800)})});
+document.getElementById("yr").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
